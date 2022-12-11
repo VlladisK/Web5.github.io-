@@ -1,1 +1,206 @@
-1
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <title>Kondratov_Vladislav_Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    >
+    <link rel="package" href="package.json">
+    <script src="calculator.js" defer></script>
+  </head>
+
+  <body>
+    <header class="mb-2">
+      <div class="container-lg">
+        <img class="mt-1" src="https://i.gifer.com/2A5.gif" alt="logo">
+        <div class="ht"><strong>Lo Fi</strong></div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container-lg">
+        <ul
+          class=" nav flex-column flex-sm-row justify-content-sm-center text-center">
+          <li class="nav-item">
+            <a class="m-1 nav-link" aria-current="page" href="#task1">Ссылки</a>
+          </li>
+          <li class="nav-item">
+            <a class="m-1 nav-link" href="#tablez">Таблица</a>
+          </li>
+          <li class="nav-item">
+            <a class="m-1 nav-link" href="#forma">Форма</a>
+          </li>
+          <li class="nav-item">
+            <a class="m-1 nav-link" href="#calc">Калькулятор</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="m-2">
+      <div class="container-lg">
+        <div class="container__row d-flex flex-column">
+          <div class="conURLS p-2 bg-light">
+            <h2 class="text-center" id="task1">Список гиперссылок</h2>
+            <ol class = "ol">
+               
+                <li><a href="http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com </a></li> 
+                <li><a href="https://example.com"> Абсолютная на главную сайта example.com в протоколе https </a></li> 
+                <li><a href="ftp://public.example.com/directory/file.txt">Ссылка на файл на сервере FTP без авторизации</a></li> 
+                <li><a href="ftp://test:password@private.public.example.com/directory/file.txt"> Ссылка на файл на сервере FTP с авторизацией</a></li> 
+                <li><a href="elo.html#count" target="_blank">Ссылку на фрагмент страницы некоторого сайта</a></li> 
+                <li><a href="#evro">Ссылка на фрагмент текущей страницы </a></li> 
+                <li><a href="https://www.example.com?key=Magic&version=bluck" target="_blank"> Ссылка с двумя параметрами в URL</a></li> 
+                
+               <br> 
+                
+                <li><a>Ссылка без href</a></li> 
+                <li><a href="">Ссылка с пустым href</a></li> 
+                <li><a href="http://example.com" rel = "nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li> 
+                <li><a href="http://example.com" rel = "noindex">Запрещенная для индексации поисковиками</a></li> 
+                <li><p>В данное время развивается гейминг и  <a target="_blank" href="https://www.twitch.tv"> Twitch </a>один из ресурсов, где можно за этим наблюдать</p></li> 
+                <li><a href="https://www.youtube.com/watch?v=jfKfPfyJRdk" target="_blank"><img src="https://i.ytimg.com/vi/lTRiuFIWV54/maxresdefault.jpg?7857057827" width="275" height="350" alt="twice"></a></li> 
+                <p><map name="figur0">
+                 <area shape = "circle" coords = "133,153, 75 " href = "https://cyclowiki.org/wiki/%D0%9A%D1%80%D1%83%D0%B3_(%D0%B3%D0%B5%D0%BE%D0%BC%D0%B5%D1%82%D1%80%D0%B8%D1%8F)" alt = "круг ">
+                <area shape = "rect" coords = "302,77, 555,230" href = "https://www.yaklass.ru/p/geometria/8-klass/chetyrekhugolniki-9229/priamougolnik-kvadrat-priznaki-priamougolnika-i-kvadrata-romb-9231/re-80c176ad-8feb-4e92-8bd2-584665a37158" alt = "прямоуголник ">
+                <area shape = "poly" coords = "675,230, 777,80, 880,230 " href = "https://microexcel.ru/treugolnik-figura/" alt = "треугольник">
+                </p></map>
+                <p id="map"><img src="figur.png"  usemap = "#figur0" width="275" height="350" alt = "Фигуры"></p>
+                
+                <li><a href="srr.html">Относительная ссылка на страницу в текущем каталоге</a></li> 
+                <li><a href="about/about.html">Относительная ссылка на старницу в каталоге about</a></li> 
+                <li><a href="../index.html">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li> 
+                <li><a href="../../index.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li> 
+                <li><a href="/">Сокращенная ссылка на главную</a></li> 
+                <li><a href="//srr.html">Сокращенная ссылка на внутреннюю</a></li> 
+               </ol>
+            
+          </div>
+            
+          
+          <div class="container__table bg-light p-2 mt-2 order-3 order-sm-2">
+            <h2 class="text-center" id="tablez">Таблица</h2>
+            <table class="table table-bordered border-primary">
+              <tr>
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+              </tr>
+              <tr>
+                <td>Ячейка 11</td>
+                <td>Ячейка 12</td>
+                <td>Ячейка 13</td>
+              </tr>
+              <tr>
+                <td colspan="2">Ячейка 21 объединенная с 22</td>
+                <td rowspan="2">Ячейка 23 и 33</td>
+              </tr>
+              <tr>
+                <td>Ячейка 31</td>
+                <td>Ячейка 32</td>
+              </tr>
+              <tr>
+                <td>Ячейка 41</td>
+                <td>Ячейка 42</td>
+                <td>Ячейка 43</td>
+              </tr>
+              <tr>
+                <td colspan="3">Ячейка 51 объединенная с 52 и 53</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="container__form p-2 mt-2 order-2 bg-light order-sm-3">
+            <h2 class="text-center" id="forma">Форма</h2>
+            <form action="/" method="POST">
+              <label>
+                Имя<br>
+                <input name="field-name-1" placeholder="Введите ваше имя">
+              </label><br>
+
+              <label>
+                email:<br>
+                <input name="field-email" placeholder="Введите почту" type="email"> 
+              </label><br>
+
+              <label>
+                Дата рождения<br>
+                <input name="field-date" value="2022-31-12" type="date"> 
+              </label><br>
+
+              Пол:<br>
+              <label>
+                <input type="radio" checked="checked"  name="radio-group-2" value="Значение1">
+                Мужской
+              </label><br>
+              
+              <label>
+                <input type="radio" name="radio-group-2" value="Значение2">
+                Женский
+              </label><br>
+
+              Количество конечностей:<br>
+              <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+                1
+              </label>
+              <label>
+                <input type="radio" checked="checked" name="radio-group-1" value="Значение2">
+                2
+              </label>
+              <label>
+                <input type="radio" checked="checked" name="radio-group-1"  value="Значение3">
+                3
+              </label>
+              <label>
+                <input type="radio" name="radio-group-1" value="Значение4" >
+                4
+              </label><br>
+
+              <label>
+                Сверхспособности: <br>
+                <select name="field-name-4[]" multiple="multiple">
+                  <option value="Значение1">Бессмертие</option>
+                  <option value="Значение2" selected="selected">
+                    Левитация
+                  </option>
+                  <option value="Значение3" selected="selected">
+                    Прохождение сквозь стены
+                  </option>
+                </select> 
+              </label><br>
+
+              <label>
+                Биография: <br>
+                <textarea name="field-name-2" style="margin: 0px; height: 35px; width: 187px"> Расскажите о себе</textarea>
+              </label><br>
+              
+              <label> <input type="checkbox" checked="checked" name="check-1"> С контрактом ознакомлен (а)</label><br>
+              
+              <input type="submit" value="Отправить">
+            </form>
+          </div>
+        </div>
+        <div class="сontainer__calc p-2 mt-2 bg-light">
+            <h2 class="text-center" id="calc">Калькулятор</h2>
+            <div class="boarding">
+              <input type="text" name="n1" placeholder="Количество" />
+              <input type="text" name="n2" placeholder="Цена" />
+            </div>
+            <button class="floating-button" id="proiz" onclick="proiz()">
+              Итого:
+            </button>
+            <hr />
+            <p id="out">Результат:</p>
+          </div>
+      </div>
+    </section>
+    <footer class="container_fluid d-flex justify-content-center align-items-center"> (c) Кондратов Владислав 2022</footer>
+  </body>
+</html>
